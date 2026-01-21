@@ -1,1 +1,1 @@
-# Projekt-pogoda
+# Projekt-pogoda-spam
