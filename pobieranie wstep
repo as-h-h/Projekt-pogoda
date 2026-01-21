@@ -1,0 +1,30 @@
+import os
+import time
+
+os.mkdir("C:/Users/Dell/Desktop/Pobrane_do_projektu")
+
+for year in range(2001, 2024):
+    for month in range(1, 10):
+        output_dir = f"C:\\Users\\Dell\\Desktop\\Pobrane_do_projektu\\{year}_0{month}.csv"
+
+        url = f"https://danepubliczne.imgw.pl/data/dane_pomiarowo_obserwacyjne/dane_meteorologiczne/dobowe/klimat/{year}/{year}_0{month}_k.zip"
+
+        print("Pobiera url",url)
+
+        os.system(f'powershell Invoke-WebRequest -Uri {url} -OutFile {output_dir}')
+        os.system(f'powershell Expand-Archive -Path "{year}_{month}.zip" -Force -DestinationPath {output_dir}')
+
+        time.sleep(1)
+
+
+    for month in range(10, 13):
+        output_dir = f"C:\\Users\\Dell\\Desktop\\Pobrane_do_projektu\\{year}_{month}.csv"
+
+        url = f"https://danepubliczne.imgw.pl/data/dane_pomiarowo_obserwacyjne/dane_meteorologiczne/dobowe/klimat/{year}/{year}_{month}_k.zip"
+
+        print("Pobiera url",url)
+
+        os.system(f'powershell Invoke-WebRequest -Uri {url} -OutFile {output_dir}')
+        os.system(f'powershell Expand-Archive -Path "{year}_{month}.zip" -Force -Destination {output_dir}')
+
+        time.sleep(1)
