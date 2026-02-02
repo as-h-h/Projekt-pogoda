@@ -1,1 +1,1 @@
-# Projekt-pogoda-spam
+Projekt PWAI dotyczący analizy danych pogodowych.
