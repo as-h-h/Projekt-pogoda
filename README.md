@@ -1,6 +1,6 @@
 # Projekt PWAI – Analiza danych pogodowych
 
-Projekt realizowany w ramach przedmiotu **Podstawowy Warsztat AI**, dotyczący analizy danych pogodowych.
+Projekt dotyczący analizy danych pogodowych, realizowany w ramach przedmiotu **Podstawowy Warsztat AI**.
 
 ## Struktura repozytorium
 
